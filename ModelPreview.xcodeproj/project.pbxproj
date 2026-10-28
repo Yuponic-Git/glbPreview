@@ -52,10 +52,12 @@
 		5E8D8D6B7531D873CAFE362E /* ModelPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		630A7C93116C8B6E3B17BBE5 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		70959E476293186ECAF111C6 /* ModelPreviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPreviewApp.swift; sourceTree = "<group>"; };
+		8CEBB2F1D76B4C277C36559B /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
 		9FBC8AE5937FA980DA1131B5 /* Preview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Preview.entitlements; sourceTree = "<group>"; };
 		B4DFBFA136186DCDB2BC85A4 /* ufbx.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ufbx.c; sourceTree = "<group>"; };
 		E1C2089D7FEBDC748D7CBF70 /* ModelPreview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ModelPreview.entitlements; sourceTree = "<group>"; };
 		E5CFC26B588D069098B66D2F /* ModelPreviewQL.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ModelPreviewQL.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		"TEMP_19DBBBC8-6452-42D2-A48E-C675F383E4E8" /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		730B177AA4CE5767BE38F199 /* ufbx */ = {
 			isa = PBXGroup;
 			children = (
+				8CEBB2F1D76B4C277C36559B /* LICENSE */,
 				B4DFBFA136186DCDB2BC85A4 /* ufbx.c */,
 				503815F95E88C7C19E0418F5 /* ufbx.h */,
 			);
@@ -136,6 +139,14 @@
 				630A7C93116C8B6E3B17BBE5 /* PreviewViewController.swift */,
 			);
 			path = Preview;
+			sourceTree = "<group>";
+		};
+		"TEMP_6F85E977-0357-4D7C-9458-BA4CF4303320" /* glbPreview */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_19DBBBC8-6452-42D2-A48E-C675F383E4E8" /* Config.xcconfig */,
+			);
+			path = glbPreview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,11 +202,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					7292331AC0B55BFBE65100E0 = {
-						DevelopmentTeam = TEAM_ID_REMOVED;
 						ProvisioningStyle = Automatic;
 					};
 					839548417F0E95D84D4CAF3E = {
-						DevelopmentTeam = TEAM_ID_REMOVED;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -256,6 +265,7 @@
 /* Begin XCBuildConfiguration section */
 		2845FF54FB94778939029C3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_19DBBBC8-6452-42D2-A48E-C675F383E4E8" /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -291,7 +301,6 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = TEAM_ID_REMOVED;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -324,6 +333,7 @@
 		};
 		43F3B81A9426A6D8E8E4C7BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_19DBBBC8-6452-42D2-A48E-C675F383E4E8" /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -359,7 +369,6 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = TEAM_ID_REMOVED;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
